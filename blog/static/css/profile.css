@@ -1,0 +1,51 @@
+*{box-sizing: border-box;}
+body , html{width: 100%;  }
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: rgba(135,3,177,0.7);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+/*NAV*/
+nav{border-bottom: 2px solid rgb(135,3,177)}
+.navbar-brand{font-size: 20px;}
+.nav-item i{margin: 0px 10px;}
+/*NAV*/
+
+@media screen and (min-width: 992px){
+	.collapse input[type=search]{width: 50%; transition:width 0.3s;}
+    .collapse input[type=search]:focus{width: 85%;}
+    li.nav-item:nth-child(1){width: 45%}
+}
+
+@media screen and (max-width: 991px){
+	li.nav-item:nth-child(1){width: 100%}
+    li.nav-item:nth-child(1) button{margin:0 5px;}
+    .collapse input[type=search]{width: 75%; transition:width 0.3s;}
+}
+
+/*User & Categories*/
+#user div{padding:10px; }
+#user{margin: 40px auto; font-family: poiret one; border: 1px solid rgba(0, 0, 0, 0.2);}
+#user .name{font-size: 2em;}
+#user i{color: rgba(0, 0, 0, 0.5); font-size: 1.5em; margin-right: 5px; padding: 5px; transition: 0.3s;}
+#user i:hover{color: rgb(255, 255, 255); background: rgb(0, 0, 0); border-radius: 5px}
+.bio{min-height: 20vh}
+.social div{width: 50px; display: inline-block; }
+.social, .bio, .email{font-size: 1.2em}
+#categories{font-size: 1.5em; margin: 40px auto; font-family: poiret one;}
+#categories .one , .two, .three{margin-bottom: 30px}
+#categories .post{width: 90px; height: 90px; border: 1px solid rgba(0,0,0,0.3); display: inline-block; border-radius: 10px;}
+#categories p.col-6{margin-bottom: 0;}
+#categories i{color: rgba(0, 0, 0, 0.5); transition: 0.3s;}
+#categories i:hover{color: rgb(255, 255, 255); background: rgb(0, 0, 0); padding: 5px; border-radius: 5px}
+

@@ -1,0 +1,96 @@
+*{box-sizing: border-box;}
+body , html{width: 100%;  }
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: rgba(135,3,177,0.7);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+/*NAV*/
+nav{border-bottom: 2px solid rgb(135,3,177)}
+.navbar-brand{font-size: 20px;}
+.nav-item i{margin: 0px 10px;}
+.info{background: rgb(255,255,224); font-family: montserrat; border-left: 3px solid rgb(135,3,177); margin: 70px auto ; padding: 30px; width: 85%;}
+.info h2{ width: 60%; border: 10px solid white; background: rgb(135,3,177); color: white; font-family: bungee; padding: 20px; transform: translate(-70px,-60px);}
+#category{width: 100%; margin: 6vh 0;}
+#category a{color: white; text-decoration: none}
+#category a:hover{color: white;}
+#category a:visited{color: white;}
+#category .ctg{color: white; padding:8px; font-family: questrial; text-align: center; margin: auto;}
+.wrapit{ border-radius: 10px; margin: 0 auto; perspective: 150px; background: rgba(135,3,177, 0.7); box-shadow: 0 0 5px rgb(0, 0, 0);}
+.ctg:nth-child(2){border-radius: 10px; transform: translatez(20px); background: rgb(135,3,177); box-shadow: 0 0 10px rgb(0, 0, 0);}
+hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7);
+    width:85%;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+.tagrow{overflow: scroll; overflow-y: hidden; width: 70%; margin: 20px auto; display: flex;}
+.tagrow::-webkit-scrollbar{height: 2px;}
+.tag{ white-space: nowrap; border-radius: 10px; background: rgb(135,3,177); margin: 10px 0; padding: 5px 15px; margin-right: 10px; text-align: center; color: white;}
+.tag a{color: white; text-decoration: none}
+.tag a:hover{color: white;}
+.tag a:visited{color: white;}
+@media screen and (min-width: 992px){
+    .collapse input[type=search]{width: 50%; transition:width 0.3s;}
+    .collapse input[type=search]:focus{width: 85%;}
+    li.nav-item:nth-child(1){width: 45%}
+    #collection{font-family: montserrat; width: 75%; margin: 0 auto}
+    .grid-item {box-shadow: 0 1px 5px rgba(0,0,0,0.3); border-radius: 10px; overflow: hidden; margin: 20px 2%; border: 1px solid rgba(0,0,0,0.3); display: inline-block; padding: 0px; width: 29%; float: right;}        
+}
+@media screen and (max-width: 991px){
+    li.nav-item:nth-child(1){width: 100%}
+    li.nav-item:nth-child(1) button{margin:0 5px;}
+    .collapse input[type=search]{width: 75%; transition:width 0.3s;}
+    #collection{font-family: montserrat; width: 90%; margin: 0 auto}
+    .grid-item {box-shadow: 0 1px 5px rgba(0,0,0,0.3); border-radius: 10px; overflow: hidden; margin: 8px 2%; border: 1px solid rgba(0,0,0,0.3); display: inline-block; padding: 0px; width: 46%; float: right;}        
+}
+.grid-item img{width: 100%; height: auto; max-height: 400px; transition: 0.2s;}
+.grid-item .image{overflow: hidden}
+.grid-item:hover img{transform:scale(1.2);}
+.grid-item .content{padding:30px 10px; font-family: lobster; color: rgba(0,0,0,0.7);}
+p.name{font-size:1.5em;} 
+.content p{margin-bottom: 2px}
+.content i{margin:0 10px 0 5px;}
+.grid:after {content: ''; display: block; clear: both;}
+.new{position: fixed; bottom: 20px; right: 20px; font-size: 2.5em; color: rgba(0,0,0,0.6);}
+.plus{transition:0.3s;}
+.new div.plus:hover{transform:rotateZ(180deg);}
+.feedback{transition:0.3s;}
+.new div.feedback:hover{transform:rotateZ(360deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

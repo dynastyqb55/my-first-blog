@@ -1,0 +1,52 @@
+*{box-sizing: border-box;}
+body , html{width: 100%; overflow-x: hidden }
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: rgba(135,3,177,0.7);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+nav{border-bottom: 2px solid rgb(135,3,177)}
+.navbar-brand{font-size: 20px;}
+.nav-item i{margin: 0px 10px;}
+
+.back div.one span:hover{background: rgb(0,0,0); color: white;}
+.back div.one{width: 50%; font-size: 1.2em; font-family: montserrat; margin: 20px 20px;}
+.back div.one span{padding: 7px; transition: 0.3s; border: 2px solid rgb(0,0,0); border-radius: 17px }
+.back div.two{text-align: right; width: 50%; margin: 20px 20px; padding: 7px;}
+.back div.two i{color: rgba(0,0,0,0.7); font-size: 2em; margin: 0 8px;}
+@media screen and ( min-width:992px ){
+	.collapse input[type=search]{width: 50%; transition:width 0.3s;}
+	.collapse input[type=search]:focus{width: 85%;}
+	li.nav-item:nth-child(1){width: 45%}
+	#post{clear: both; width: 70%; margin: 0 auto; padding: 40px; font-family: montserrat alternates }
+	.back{width: 75%; margin: 20px auto; display: flex;}
+	#content{width: 100%; padding: 60px 10px; margin: 0 auto;}
+	.intro div{margin: auto; font-size: 2vw; width: 100%; font-family: lobster; color: rgba(0,0,0,0.8);}
+}
+@media screen and ( max-width:991px ){
+	li.nav-item:nth-child(1){width: 100%}
+	li.nav-item:nth-child(1) button{margin:0 5px;}
+	.collapse input[type=search]{width: 75%; transition:width 0.3s;}
+	#post{clear: both; width: 90%; margin: 0 auto; padding: 10px; font-family: montserrat alternates }
+	.back{width: 95%; margin: 20px auto; display: flex;}
+	#content{width: 100%; padding: 20px 10px; margin: 0 auto;}
+	.intro div{margin: auto; font-size: 15px; width: 100%; font-family: lobster; color: rgba(0,0,0,0.8);}
+}
+.image{position: relative}
+.intro{margin: 0; padding: 0;}
+.image img{width: 100%; height: auto; margin-left:0;}
+.intro div i{margin: 0 10px; color: black;}
+.intro .col-5{margin-top:0; padding: 0}
+#ingredients{width: 100%; margin: 0;}
+#ingredients h3{padding: 0; margin: 0;}
+#ingredients ul{padding: 20px 20px;}

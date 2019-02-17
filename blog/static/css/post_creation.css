@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+body , html{ overflow-x: hidden }
+body{background:  rgb(239,239,239);}
+/*NAV*/
+body::-webkit-scrollbar {
+    width: 6px;
+    height:0px;
+    background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: rgba(135,3,177,0.7);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.tagrow::-webkit-scrollbar{
+	height:2px;
+    background-color: #F5F5F5;
+}
+.tagrow::-webkit-scrollbar-thumb {
+    height: 2px;
+    background-color: rgba(135,3,177,0.7);
+    border-radius: 2px;
+}
+.tagrow::-webkit-scrollbar-track {
+    width: 2px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+nav{border-bottom: 2px solid rgb(135,3,177)}
+
+
+.navbar-brand{font-size: 20px;}
+.nav-item i{margin: 0px 10px;}
+
+
+@media screen and (min-width: 992px){
+	.collapse input[type=search]{width: 50%; transition:width 0.3s;}
+	.collapse input[type=search]:focus{width: 85%;}
+	li.nav-item:nth-child(1){width: 45%}
+	.content-block{border-radius: 7px; background: rgb(255, 255, 255); width: 65%; padding:20px 50px; margin: 20px auto; position: relative;} 
+	.photo{border-radius: 7px; padding: 80px; background: rgb(239,239,239); text-align: center; font-size: 1.5em; display: flex; align-items: center; justify-content: center;}
+	#back{width: 65%; margin: 0 auto;}
+}
+
+@media screen and (max-width: 991px){
+	li.nav-item:nth-child(1){width: 100%}
+	li.nav-item:nth-child(1) button{margin:0 5px;}
+	.collapse input[type=search]{width: 75%; transition:width 0.3s;}
+	.content-block{border-radius: 7px; background: rgb(255, 255, 255); width: 100%; padding:20px 5px; margin: 20px auto; position: relative;} 
+	.photo{border-radius: 7px; padding: 80px; background: rgb(239,239,239); text-align: center; font-size: 1.5em; display: flex; align-items: center; justify-content: center;}
+	#back{width: 100%; margin: 0 auto;}
+}
+
+#category{width: 100%; margin: 6vh 0; background: rgb(239,239,239)}
+#category a{color: white; text-decoration: none}
+#category a:hover{color: white;}
+#category a:visited{color: white;}
+#category .ctg{color: white; padding:8px; font-family: questrial; text-align: center; margin: auto;}
+.wrapit{ border-radius: 10px; margin: 0 auto; perspective: 150px; background: rgba(135,3,177, 0.7); box-shadow: 0 0 5px rgb(0, 0, 0);}
+.ctg:nth-child(2){border-radius: 10px; transform: translatez(20px); background: rgb(135,3,177); box-shadow: 0 0 10px rgb(0, 0, 0);}
+
+
+/*Main*/  
+.main{position: relative; background: rgb(239,239,239); padding:20px 10px;} 
+.back{padding:5px 10px; border: 2px solid rgb(0,0,0); border-radius:50px; transition: 0.3s;}
+.back:hover{background: #000000; border-radius:50px; color: #fff;}
+.main button{margin: 0 20px; float: right; color: white; font-size: 1.2em; background-color: rgb(240,0,35); padding: 10px 15px; border: 1px solid rgb(230,0,35); border-radius: 5px; font-family: roboto; transition: background-color 0.2s; } 
+.main button:hover{background-color: rgb(200,0,35)}
+.main button i{margin:0 0 0 10px;}
+.main2{clear: both; padding-top: 20px} 
+.tagrow{display: flex; overflow-x: scroll; margin-bottom: 15px;}
+.tag{white-space: nowrap; background: rgb(135,3,177); margin: 10px 15px 10px 0 ; padding: 10px; color: white;}
+
+/*FORM*/
+.main div.photo , div.content{margin:0 auto; padding:10px 50px;}
+.main input[type=text]{width: 100%; border:1px solid #FFFFFF; font-family: comfortaa; } 
+.main .content table td{padding: 0 5px;}
+.main input[type=number]{width: 100%; border:1px solid #FFFFFF; font-family: comfortaa;} 
+.main input[type=text].title{width: 100%; border:1px solid #FFFFFF; font-size: 2.5em; font-family: comfortaa; font-weight: 700 } 
+.main input[type=text].title:focus{outline: none;}
+.main .info img{width: 80%; min-width: 50px ; height: auto}
+.main .info{padding: 5px 0}
+.main .info div{padding:10px}
+.main .info p{padding: 0; margin-bottom: 0; line-height:1;}
+.main .info p:nth-child(1){padding-top: 5px;}
+.main textarea{border:0; width: 100%}
+.main textarea:focus{outline:none;}
